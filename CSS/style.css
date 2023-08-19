@@ -1,0 +1,78 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: url(../Képek/háttér.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+.main{
+    text-align: center;
+    font-size: 1.5cm;
+    color: white;
+    text-decoration: underline;
+}
+
+.gombok a{
+    background-color: rgba(0, 0, 0, 0.377);
+    color: white;
+    font-size: 0.8cm;
+    text-decoration: none;
+    border-radius: 8px;
+    padding-left: 0.5cm;
+    transition: all 0.4s;
+}
+.gombok a:hover{
+    font-size: 1.2cm;
+    transition: all 0.4s;
+    color: rgb(85, 207, 85);
+}
+a{
+    color: rgb(248, 161, 0);
+    transition: all 0.3s;
+}
+a:hover{
+    color: white;
+    transition: all 0.3s;
+}
+#ma{
+    display: none;
+}
+
+.red{
+    color: red;
+}
+
+.center{
+    float: center;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.kuldott-kepet img{
+    height: 150px;
+    border-radius: 9px;
+    margin-left: 0.01cm;
+    float: left;
+    text-align: left;
+    margin-top: 1cm;
+}
+.kuldott-kepet p{
+    color: white;
+    float: left;
+    margin-left: -4.2cm;
+    margin-top: 5.1cm;
+}
+
+.friendlist{
+    color: aquamarine;
+}
+
+.friendborder{
+    float: left;
+    text-align: left;
+}
+.friendborder h2{
+    text-align: center;
+}
