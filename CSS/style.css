@@ -1,78 +1,95 @@
-body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-image: url(../Képek/háttér.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: white;
-}
-.main{
-    text-align: center;
-    font-size: 1.5cm;
-    color: white;
-    text-decoration: underline;
+/* style.css */
+
+/* Reset some default styles */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.gombok a{
-    background-color: rgba(0, 0, 0, 0.377);
+/* Global styles */
+body {
+    background-color: black;
     color: white;
-    font-size: 0.8cm;
-    text-decoration: none;
-    border-radius: 8px;
-    padding-left: 0.5cm;
-    transition: all 0.4s;
-}
-.gombok a:hover{
-    font-size: 1.2cm;
-    transition: all 0.4s;
-    color: rgb(85, 207, 85);
-}
-a{
-    color: rgb(248, 161, 0);
-    transition: all 0.3s;
-}
-a:hover{
-    color: white;
-    transition: all 0.3s;
-}
-#ma{
-    display: none;
-}
-
-.red{
-    color: red;
-}
-
-.center{
-    float: center;
-    text-align: center;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-.kuldott-kepet img{
-    height: 150px;
-    border-radius: 9px;
-    margin-left: 0.01cm;
-    float: left;
-    text-align: left;
-    margin-top: 1cm;
-}
-.kuldott-kepet p{
-    color: white;
-    float: left;
-    margin-left: -4.2cm;
-    margin-top: 5.1cm;
+    min-height: 100vh;
+    margin: 0;
 }
 
-.friendlist{
-    color: aquamarine;
-}
-
-.friendborder{
-    float: left;
-    text-align: left;
-}
-.friendborder h2{
+.container {
     text-align: center;
+}
+
+.gombok {
+    margin-bottom: 1rem;
+}
+
+.gombok a {
+    display: inline-block;
+    margin: 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.5s, transform 0.2s;
+}
+
+.gombok a:hover {
+    background-color: #000000;
+    color: white;
+    transform: scale(1.05);
+}
+
+.main {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.date {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+#date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: rgb(250, 187, 14);
+    border-radius: 16px;
+}
+
+#ma {
+    margin-top: 1rem;
+}
+
+#szuletesnap {
+    display: none;
+    font-size: 2rem;
+    color: #ff6600;
+}
+
+footer {
+    margin-top: auto;
+    padding: 1rem 0;
+    font-size: 0.8rem;
+    color: white;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .gombok a {
+        padding: 0.3rem 0.7rem;
+    }
+
+    .main {
+        font-size: 2rem;
+    }
 }
